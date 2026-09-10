@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # React Weather Dashboard
 
 A lab-ready React application that demonstrates:
@@ -70,3 +71,7 @@ Current weather + historical data
        ↓
 Chart.js line graph
 ```
+=======
+# react-weather-dashboard
+react-weather-dashboard
+>>>>>>> 6cd73ffda079b27c21b0a67f707bae48e96246d4
