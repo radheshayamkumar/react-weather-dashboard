@@ -1,7 +1,3 @@
-Yes. For students, it is better to have **one complete `README.md` file** containing installation, API-key setup, project structure, execution, explanation, troubleshooting, and GitHub steps.
-
-Replace your existing `README.md` completely with this:
-
 ````markdown
 # 🌦️ React Weather Dashboard
 
