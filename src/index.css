@@ -1,0 +1,243 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #172033;
+  background: #eef3f8;
+  font-synthesis: none;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+}
+
+.app {
+  width: min(1000px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 48px 0 28px;
+}
+
+.hero {
+  text-align: center;
+  padding: 30px 10px 28px;
+}
+
+.eyebrow,
+.label {
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  color: #64748b;
+}
+
+h1 {
+  margin: 8px 0;
+  font-size: clamp(36px, 6vw, 58px);
+  letter-spacing: -0.04em;
+}
+
+.subtitle {
+  max-width: 650px;
+  margin: 0 auto 26px;
+  color: #64748b;
+  line-height: 1.6;
+}
+
+.search {
+  display: flex;
+  max-width: 650px;
+  margin: auto;
+  gap: 10px;
+}
+
+.search input {
+  flex: 1;
+  min-width: 0;
+  padding: 15px 17px;
+  border: 1px solid #cbd5e1;
+  border-radius: 12px;
+  font-size: 16px;
+  outline: none;
+  background: white;
+}
+
+.search input:focus {
+  border-color: #64748b;
+}
+
+button {
+  border: 0;
+  border-radius: 12px;
+  padding: 0 22px;
+  font-size: 15px;
+  font-weight: 750;
+  cursor: pointer;
+  background: #172033;
+  color: white;
+}
+
+button:disabled {
+  opacity: 0.55;
+  cursor: wait;
+}
+
+.error {
+  background: #fff1f2;
+  border: 1px solid #fecdd3;
+  color: #9f1239;
+  padding: 14px 16px;
+  border-radius: 12px;
+  margin: 0 0 18px;
+}
+
+.current-card,
+.chart-card,
+.empty {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 20px;
+  box-shadow: 0 10px 35px rgba(15, 23, 42, 0.06);
+}
+
+.current-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+}
+
+.current-card h2 {
+  margin: 8px 0 4px;
+  font-size: 30px;
+}
+
+.condition {
+  margin: 0;
+  text-transform: capitalize;
+  color: #64748b;
+}
+
+.temperature {
+  font-size: 52px;
+  font-weight: 800;
+  letter-spacing: -0.05em;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+  margin: 14px 0;
+}
+
+.stat {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 20px;
+}
+
+.stat span {
+  display: block;
+  color: #64748b;
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+
+.stat strong {
+  font-size: 20px;
+}
+
+.chart-card {
+  padding: 28px;
+}
+
+.section-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 18px;
+}
+
+.section-heading h2 {
+  margin: 7px 0 0;
+}
+
+.badge {
+  padding: 8px 11px;
+  background: #f1f5f9;
+  border-radius: 999px;
+  color: #475569;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.chart-wrap {
+  height: 380px;
+}
+
+.muted {
+  color: #64748b;
+}
+
+.empty {
+  text-align: center;
+  padding: 70px 20px;
+}
+
+.weather-icon {
+  font-size: 52px;
+}
+
+.empty h2 {
+  margin-bottom: 5px;
+}
+
+.empty p {
+  color: #64748b;
+}
+
+footer {
+  text-align: center;
+  color: #94a3b8;
+  font-size: 12px;
+  padding: 28px 0 0;
+}
+
+@media (max-width: 700px) {
+  .app {
+    width: min(100% - 20px, 1000px);
+    padding-top: 20px;
+  }
+
+  .search {
+    flex-direction: column;
+  }
+
+  button {
+    min-height: 48px;
+  }
+
+  .current-card {
+    align-items: flex-start;
+    gap: 20px;
+    flex-direction: column;
+  }
+
+  .temperature {
+    font-size: 44px;
+  }
+
+  .stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .section-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
